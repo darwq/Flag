@@ -1,0 +1,201 @@
+*,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", "Helvetica";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+}
+
+.container .menu {
+  display: flex;
+  padding: 2.5%;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+  background: #fff;
+}
+
+.menu h1 {
+  font-weight: 500;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.menu ul {
+  list-style: none;
+  width: 100%;
+}
+
+.menu ul li:nth-last-of-type(1) {
+  font-weight: bold;
+}
+
+.container .menu ul li {
+  float: left;
+  margin: 0.5% 2% 0 5%;
+}
+
+.menu .image {
+  position: absolute;
+  right: 50%;
+  transform: translate(50%, -5%);
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(to left, red, yellow);
+  border-image-slice: 1;
+  padding-bottom: 5px;
+}
+
+.menu .image img {
+  width: 75px;
+  height: 50px;
+}
+
+.traditions-presentation {
+  position: relative;
+  background: url("https://wallpaper.dog/large/20365242.jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.traditions-presentation .filter {
+  position: absolute;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.traditions-presentation .text {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.text h1 {
+  background: -webkit-linear-gradient(rgb(173, 35, 40), rgb(200, 165, 22));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -25%);
+  font-size: 6rem;
+}
+
+.intel {
+  width: 100%;
+  height: 150vh;
+}
+
+.intel .first-section,
+.second-section {
+  padding: 3% 7%;
+}
+
+.first-section h1,
+.second-section h1 {
+  text-align: center;
+  line-height: 5;
+  font-weight: 450;
+}
+
+.first-section img,
+.second-section img {
+  width: 450px;
+  height: 300px;
+}
+
+.first-section p,
+.second-section p {
+  width: 50%;
+  line-height: 2.5;
+  margin-right: 12%;
+  font-size: 1.1rem;
+}
+
+.first-section p {
+  float: left;
+}
+
+.second-section {
+  margin-top: 7%;
+}
+
+.second-section p {
+  float: right;
+}
+
+.break {
+  text-align: center;
+  width: 25%;
+  height: auto;
+  border-width: 3px;
+  border-style: solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right, red, yellow);
+  margin: 3.5% auto;
+}
+
+/* QUIZ */
+
+.menu .quiz {
+  transform: translateX(25%);
+  font-size: 1.5rem;
+}
+
+.menu .quiz li a {
+  color: purple;
+  font-weight: 400;
+}
+
+/* FOOTER */
+
+.footer {
+  background: #1667bd;
+  padding: 10vh;
+  position: relative;
+}
+
+.footer .copyright {
+  position: absolute;
+  left: 50%;
+  top: 75%;
+  transform: translateX(-75%);
+  color: #fff;
+}
+
+.footer .logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logos a {
+  margin-right: 5%;
+}
+
+.logos i {
+  font-size: 1.2rem;
+}
+
+.logos .fa-instagram {
+  color: pink;
+}
+
+.logos .fa-facebook {
+  color: #06213f;
+}
